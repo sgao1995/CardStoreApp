@@ -1,0 +1,13 @@
+﻿@model CardsCatalogueViewModel
+
+    <h1>@Model.CurrentCategory</h1>
+    @foreach (var card in Model.Cards)
+    {
+        <div>
+            <h2>@card.Name</h2>
+            <h3>@card.Description</h3>
+            <h3>@card.Category.CategoryName</h3>
+            <h4>@card.Price.ToString("c")</h4>
+        </div>
+
+    }
