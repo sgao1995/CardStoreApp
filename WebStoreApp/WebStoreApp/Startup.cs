@@ -28,16 +28,6 @@ namespace WebStoreApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            /*app.Use(async (context, next) => {
-                await next();
-                if (context.Response.StatusCode == 404 &&
-                    !Path.HasExtension(context.Request.Path.Value) &&
-                    !context.Request.Path.Value.StartsWith("/api/"))
-                {
-                    context.Request.Path = "./src/index.cshtml";
-                    await next();
-                }
-            });*/
 
             app.UseDeveloperExceptionPage();    
 
@@ -45,7 +35,14 @@ namespace WebStoreApp
             
             app.UseStaticFiles();
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(config =>
+            {
+                config.MapRoute(
+                    name: "Default",
+                    template: "{controller}/{action}/{id?}",
+                    defaults: new { controller = "Home", action = "Catalogue" }
+                    );
+            });
         }
     }
 }

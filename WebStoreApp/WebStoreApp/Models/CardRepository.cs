@@ -58,7 +58,126 @@ namespace WebStoreApp.Models
                         IsFeatured = false,
                         IsInStock = true,
                         ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
-                        Category = _categoryRepository.Categories.ToList()[0] }
+                        Category = _categoryRepository.Categories.ToList()[0]
+                    },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     },
+                     new Card {
+                        CardId = 3,
+                        Name = "Dark Magical Circle",
+                        Description = "Spell card support for Dark Magician, allows easier way to search for Dark Magician, also allows player to banish an opponent's card after summoning Dark Magician",
+                        Attribute = "Spell",
+                        Type = "Spell/Continuous",
+                        Level = 7,
+                        EffectText ="Placeholder",
+                        Price = 0.15M,
+                        IsFeatured = false,
+                        IsInStock = true,
+                        ThumbnailUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoyis285j4MVnvdt85v42PRO6G6CMDsfv8BYvHhlLpVSkWzE1EA",
+                        Category = _categoryRepository.Categories.ToList()[0]
+                     }
+
+
+
+
+
+
                 };
             }
         }
