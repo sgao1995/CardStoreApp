@@ -7,17 +7,18 @@ namespace WebStoreApp.Models
 {
     public class ReviewRepository : IReviewRepository
     {
-        public IEnumerable<Review> Reviews
+        private readonly AppDbContext _appDbContext;
+
+        public ReviewRepository(AppDbContext appDbContext)
         {
-            get
-            {
-                return new List<Review>
-                {
-                    new Review{ReviewId = 1, ReviewerName = "CardExpert", ReviewDate = DateTime.Now, Content = " This card is good", Rating = 5 },
-                    new Review{ReviewId = 2, ReviewerName = "CardExpert", ReviewDate = DateTime.Now, Content = " This card is okay", Rating = 3 },
-                    new Review{ReviewId = 3, ReviewerName = "CardExpert", ReviewDate = DateTime.Now, Content = " This card is bad", Rating = 1 }
-                };
-            }
+            _appDbContext = appDbContext;
+        }
+
+        public IEnumerable<Review> Reviews => _appDbContext.Reviews;
+     
+        public Review GetReviewById(int reviewId)
+        {
+            return _appDbContext.Reviews.FirstOrDefault(review => review.ReviewId == reviewId);
         }
     }
 }
