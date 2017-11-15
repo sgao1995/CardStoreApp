@@ -9,16 +9,7 @@
             <div class="card-deck">
                 @foreach (var card in Model.Cards)
             {
-                    <div class="col-3">
-                        <div class="card">
-                            <img class="card-img-top" src="@card.ThumbnailUrl" alt="">
-                            <div class="card-body">
-                                <h5 class="card-text">@card.Price.ToString("c")</h5>
-                                <h5 class="card-title">@card.Name</h5>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
+                  @Html.Partial("Details", card);
                 }
             </div>
         </div>

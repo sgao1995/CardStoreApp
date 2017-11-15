@@ -14,7 +14,12 @@ namespace WebStoreApp.Models
         }
         
         public DbSet<Category> Categories { get; set; }
+
         public DbSet<Card> Cards { get; set; }
+
         public DbSet<Review> Reviews { get; set; }
+
+        public DbSet<CartItem> CartItems { get; set; }
+
     }
 }

@@ -1,0 +1,11 @@
+﻿@model Card
+<div class="col-3">
+    <div class="card">
+        <img class="card-img-top" src="@Model.ThumbnailUrl" alt="">
+        <div class="card-body">
+            <h5 class="card-text">@Model.Price.ToString("c")</h5>
+            <h5 class="card-title">@Model.Name</h5>
+            <a href="#" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+</div>

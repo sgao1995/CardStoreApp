@@ -37,14 +37,21 @@ namespace WebStoreApp
 
             services.AddDbContext<AppDbContext>(options =>
                                         options.UseSqlServer(_configurationRoot.GetConnectionString("DefaultConnection")));
-              
+            services.AddMemoryCache();
+            services.AddSession();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<Cart>(c => Cart.GetCart(c));
+
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            app.UseSession();
+
             DbSeeder.Seed(app);
+
             app.UseDeveloperExceptionPage();    
 
             app.UseStatusCodePages();         
